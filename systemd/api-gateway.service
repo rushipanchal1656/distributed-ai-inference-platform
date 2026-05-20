@@ -1,0 +1,11 @@
+[Unit]
+Description=API Gateway
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/env bash -c 'echo running api gateway'
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=Caller Worker
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/env bash -c 'echo running caller worker'
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

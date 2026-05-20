@@ -1,0 +1,11 @@
+[Unit]
+Description=Inference Worker
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/env bash -c 'echo running inference worker'
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target
