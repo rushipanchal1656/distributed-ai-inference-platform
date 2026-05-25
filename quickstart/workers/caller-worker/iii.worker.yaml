@@ -1,8 +1,13 @@
 name: caller-worker
+
 runtime:
-  language: typescript
+  kind: typescript
   package_manager: npm
   entry: src/worker.ts
+
 scripts:
-  install: 'npm install'
-  start: 'npm run dev'
+  install: "npm install"
+  start: "npm run dev"
+
+sandbox:
+  enabled: false
