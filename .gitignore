@@ -1,17 +1,33 @@
-# Node
-node_modules/
+# Terraform
+
+*.tfstate
+*.tfstate.*
+.terraform/
+terraform.tfvars
 
 # Python
-__pycache__/
+
+venv/
+**pycache**/
 *.pyc
-env/
-.venv/
 
-# Terraform
-.terraform/
-.tfstate
-.tfstate.*
+# Node
 
-# Others
+node_modules/
+
+# IDE
+
+.vscode/
+.idea/
+
+# OS
+
 .DS_Store
+
+# Logs
+
 *.log
+
+# iii
+
+.quickstart/.iii/
